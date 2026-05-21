@@ -1,0 +1,126 @@
+#contato {
+    padding: 5rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#contato h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    padding: 3rem;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    padding: 1rem;
+    border: 1px solid #E2D4C8;
+    border-radius: 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    background-color: #FAFAFA;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.btn-submit {
+    padding: 1.2rem;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+.btn-submit:hover {
+    background-color: var(--secondary);
+}
+
+/* Classes para a validação do JavaScript */
+.erro-msg {
+    color: #D9534F;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    display: none;
+}
+
+.erro-msg.ativo {
+    display: block;
+}
+
+input.erro-input {
+    border-color: #D9534F;
+}
+
+.sucesso-msg {
+    color: #2E7D32;
+    text-align: center;
+    font-weight: 600;
+    padding: 1rem;
+    background-color: #E8F5E9;
+    border-radius: 12px;
+}
+
+.hidden {
+    display: none;
+}
+
+.bgimgContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+.bgimgContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(8px); /* Nível do desfoque */
+    transform: scale(1.05); /* Dá um zoom leve para esconder as bordas borradas que o blur gera */
+}
+
+.bgimgContainer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(253, 251, 247, 0.481);
+}

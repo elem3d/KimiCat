@@ -1,0 +1,42 @@
+#sobre {
+    padding: 5rem 0;
+}
+
+.sobre-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+}
+
+.sobre-content h2 {
+    font-size: 2.5rem;
+    color: var(--secondary);
+}
+
+.indicadores-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.indicador-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    min-width: 200px;
+}
+
+.indicador-item .icone {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.indicador-item strong {
+    font-size: 1.5rem;
+    color: var(--primary);
+}

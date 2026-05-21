@@ -1,0 +1,84 @@
+/* Importação dos módulos */
+@import url('home.css');
+@import url('sobre.css');
+@import url('servicos.css');
+@import url('contato.css');
+
+/* Variáveis e Reset */
+:root {
+    --bg-color: #FDFBF7; 
+    --text-color: #2D231E;
+    --primary: #D96A2B; 
+    --secondary: #8C5A40; 
+    --card-bg: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-color); 
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05); 
+    z-index: 1000; 
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer Global */
+footer {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 4rem;
+}

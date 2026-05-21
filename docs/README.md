@@ -44,4 +44,4 @@ Para ver o site funcionando localmente na sua máquina, é super rápido e não 
 3. Dê um duplo clique no arquivo `index.html`, ou clique com o botão direito e escolha abrir com o seu navegador favorito (Google Chrome, Firefox, Edge, etc).
 4. O site vai abrir na mesma hora, já com todo o visual, as validações e as cores funcionando.
 
-Ou você também pode acessar o link do meu repositório no github, onde publiquei com o github pages: 
+Ou você também pode acessar o link do meu repositório no github, onde publiquei com o github pages: [text](https://elem3d.github.io/KimiCat/)
